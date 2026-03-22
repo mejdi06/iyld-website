@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -1141,51 +1142,11 @@
       <p class="booking-sub">Buche dein kostenloses Strategiegespräch. 30 Minuten, die dein Marketing verändern werden.</p>
     </div>
 
-    <!-- Cal.com Embed Container -->
-    <div class="cal-embed-wrapper reveal" id="cal-embed" style="min-height:600px;"></div>
-
-    <!-- Cal.com Embed Script -->
-    <script type="text/javascript">
-      (function (C, A, L) {
-        let p = function (a, ar) { a.q.push(ar); };
-        let d = C.document;
-        C.Cal = C.Cal || function () {
-          let cal = C.Cal;
-          let ar = arguments;
-          if (!cal.loaded) {
-            cal.ns = {}; cal.q = cal.q || [];
-            d.head.appendChild(d.createElement("script")).src = A;
-            cal.loaded = true;
-          }
-          if (ar[0] === L) {
-            const api = function () { p(api, arguments); };
-            const namespace = ar[1];
-            api.q = api.q || [];
-            if (typeof namespace === "string") {
-              cal.ns[namespace] = cal.ns[namespace] || api;
-              p(cal.ns[namespace], ar);
-              p(cal, ["initNamespace", namespace]);
-            } else p(cal, ar);
-            return;
-          }
-          p(cal, ar);
-        };
-      })(window, "https://app.cal.com/embed/embed.js", "init");
-
-      Cal("init", { origin: "https://cal.com" });
-
-      Cal("inline", {
-        elementOrSelector: "#cal-embed",
-        calLink: "mejdi-abdyli-bhzr37",
-        layout: "month_view",
-        config: { theme: "dark" }
-      });
-
-      Cal("ui", {
-        theme: "dark",
-        styles: { branding: { brandColor: "#f5f5f0" } }
-      });
-    </script>
+    <!-- GHL Booking Embed -->
+    <div class="cal-embed-wrapper reveal" style="min-height:600px;">
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/tbyfwOwCzUZ3a0N3vMxN" style="width: 100%; min-height: 600px; border: none; overflow: hidden;" scrolling="no" id="tbyfwOwCzUZ3a0N3vMxN_1774208904309"></iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+    </div>
   </div>
 </section>
 
