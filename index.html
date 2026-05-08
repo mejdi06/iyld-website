@@ -1,1310 +1,201 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>ilyd marketing — Marketing That Opens Up Your Eyelids</title>
-<meta name="description" content="ilyd marketing — Wir öffnen Augen. Performance Marketing, das Ergebnisse liefert. Jetzt kostenloses Strategiegespräch buchen.">
-<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAACUElEQVR4nO2VsW4aQRCGd2Z3c3SAsGQh90hOaFEsCoxPNFii8yOksIRooYobGsDxkyBLsYTtikdwmlhGAiutTRQ7UlwgfHuzKQ4wPrgDjqTzlLuz880/OzsLAMCCmGZsqYMYIDYAWzK6H8BHmNYrZOMJWClKEIDLAt6UPwDgRUVgQTiONWdPa9dqEAiOYwU4uwpgOQtyDy7AixBEFIIjLgiKiEIIRJ929+gPPa4agOOjZ8uICLZNE7f5GbgSd5LSWqfT6UajkclkGGNERKSF4ACMc845cs6l5LZNpmkeHx+nUimt9VwdzhK4AIyx/f18Mpns9+9rtVq9Xi+VSpalOEellFK2UsowQufnF53Ozc7Ox1wuNznoMjFXF2Ps+dnqdrv9/s9wOByPxxOJxNbW1tHR58PDT4PBYHv7fSKR2NvL3t3d397+sCxrthILAIgghIhGo9lsttPpXF9/z2b3qtXq7u6ubdNwOKzVaqZpImIoZPiMZL9ZZNtKa20YRiwWk/JdsVgslytXV9+azebGxkY8Hg+Hw0SklBo3gBsDoD0VSCljsdjT05+Tky+Pj78fHn71ej0iOjv72m63Nzc3k8kPlUpZShmJRKSUHlnCqAunTQjBGDs4OGi1WqZpTrxN0zw9PeUcp+uRz+cvLy8KhQJjTAgxG+3VO3CmmzOCHNWc87GDJtJEBMAAgPORdCKybZt5vwPPhwYAWmvX14iIRPS6CKP2n/MO/QETTTMzddbHIXntBv5KlrMgn/4/Bkz/a/8FsPAO1gWsaW+AN8D69hcq5NkthqxdOAAAAABJRU5ErkJggg==">
-<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
 <style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
   :root {
-    --black: #0a0a0a;
-    --white: #f5f5f0;
-    --gray: #8a8a8a;
-    --gray-light: #1a1a1a;
-    --gray-border: #2a2a2a;
-    --accent: #e0e0e0;
+    --bg: #07060d;
+    --bg-2: #0d0b1a;
+    --surface: rgba(255, 255, 255, 0.04);
+    --surface-2: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --text: #f5f3ff;
+    --text-2: rgba(245, 243, 255, 0.72);
+    --text-3: rgba(245, 243, 255, 0.48);
+
+    --accent-1: #a78bfa;   /* violet */
+    --accent-2: #f472b6;   /* pink  */
+    --accent-3: #60a5fa;   /* blue  */
+    --accent-4: #fbbf24;   /* amber */
+
+    --grad-primary: linear-gradient(135deg, #a78bfa 0%, #f472b6 50%, #fbbf24 100%);
+    --grad-text: linear-gradient(120deg, #c4b5fd 0%, #f0abfc 50%, #fbbf24 100%);
+    --grad-glow: radial-gradient(circle, rgba(167,139,250,0.45), transparent 70%);
+
+    --radius-sm: 12px;
+    --radius: 20px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
+
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
   }
 
-  html { scroll-behavior: smooth; font-size: 16px; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: auto; -webkit-font-smoothing: antialiased; }
 
   body {
-    background: var(--black);
-    color: var(--white);
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
+    position: relative;
   }
 
-  ::selection {
-    background: var(--white);
-    color: var(--black);
-  }
-
-  /* ─── CURSOR GLOW ─── */
-  .cursor-glow {
+  /* ======= Animated Background Blobs ======= */
+  .bg-wrap {
     position: fixed;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    pointer-events: none;
+    inset: 0;
     z-index: 0;
-    background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
-    transform: translate(-50%, -50%);
-    transition: left 0.3s ease-out, top 0.3s ease-out;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.55;
+    will-change: transform;
+  }
+  .blob.b1 {
+    width: 650px; height: 650px;
+    background: radial-gradient(circle, #a78bfa, transparent 70%);
+    top: -200px; left: -200px;
+    animation: floatBlob1 22s ease-in-out infinite;
+  }
+  .blob.b2 {
+    width: 550px; height: 550px;
+    background: radial-gradient(circle, #f472b6, transparent 70%);
+    top: 30%; right: -150px;
+    animation: floatBlob2 26s ease-in-out infinite;
+  }
+  .blob.b3 {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, #60a5fa, transparent 70%);
+    bottom: -100px; left: 20%;
+    animation: floatBlob3 30s ease-in-out infinite;
+  }
+  .blob.b4 {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, #fbbf24, transparent 70%);
+    top: 50%; left: 40%;
+    opacity: 0.25;
+    animation: floatBlob4 35s ease-in-out infinite;
+  }
+  @keyframes floatBlob1 {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    33% { transform: translate(150px, 100px) scale(1.15); }
+    66% { transform: translate(-80px, 200px) scale(0.9); }
+  }
+  @keyframes floatBlob2 {
+    0%, 100% { transform: translate(0,0) scale(1); }
+... (1,268 lines left)<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Termin buchen — ilyd marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #07060d;
+    --bg-2: #0d0b1a;
+    --surface: rgba(255, 255, 255, 0.04);
+    --surface-2: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --text: #f5f3ff;
+    --text-2: rgba(245, 243, 255, 0.72);
+    --text-3: rgba(245, 243, 255, 0.48);
+
+    --accent-1: #a78bfa;
+    --accent-2: #f472b6;
+    --accent-3: #60a5fa;
+    --accent-4: #fbbf24;
+
+    --grad-primary: linear-gradient(135deg, #a78bfa 0%, #f472b6 50%, #fbbf24 100%);
+    --grad-text: linear-gradient(120deg, #c4b5fd 0%, #f0abfc 50%, #fbbf24 100%);
+
+    --radius: 20px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
+
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  /* ─── NAV ─── */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 1.5rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    background: rgba(10,10,10,0.7);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    transition: transform 0.4s ease;
-  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  .nav-logo {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--white);
-    text-decoration: none;
-  }
+  html { -webkit-font-smoothing: antialiased; }
 
-  .nav-logo span {
-    color: var(--gray);
-    font-weight: 300;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2.5rem;
-    align-items: center;
-    list-style: none;
-  }
-
-  .nav-links a {
-    color: var(--gray);
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: color 0.3s;
-    font-weight: 400;
-  }
-
-  .nav-links a:hover { color: var(--white); }
-
-  .nav-cta {
-    background: var(--white) !important;
-    color: var(--black) !important;
-    padding: 0.65rem 1.5rem !important;
-    border-radius: 0 !important;
-    font-weight: 500 !important;
-    transition: all 0.3s !important;
-  }
-
-  .nav-cta:hover {
-    background: var(--accent) !important;
-    transform: translateY(-1px);
-  }
-
-  .nav-mobile-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-  }
-
-  .nav-mobile-toggle span {
-    display: block;
-    width: 24px;
-    height: 1px;
-    background: var(--white);
-    margin: 6px 0;
-    transition: all 0.3s;
-  }
-
-  /* ─── HERO ─── */
-  .hero {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 8rem 2rem 4rem;
-    position: relative;
-    overflow: hidden;
   }
 
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 800px;
-    height: 800px;
-    background: radial-gradient(circle, rgba(255,255,255,0.015) 0%, transparent 70%);
+  /* ======= Animated Background Blobs ======= */
+  .bg-wrap {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
     pointer-events: none;
+    overflow: hidden;
   }
-
-  .hero-eyebrow {
-    font-size: 0.75rem;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: var(--gray);
-    margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeUp 0.8s ease forwards 0.2s;
-    font-weight: 400;
-  }
-
-  .hero h1 {
-    font-family: 'Instrument Serif', serif;
-    font-weight: 400;
-    font-size: clamp(3rem, 8vw, 7.5rem);
-    line-height: 1.05;
-    max-width: 1000px;
-    opacity: 0;
-    animation: fadeUp 1s ease forwards 0.4s;
-  }
-
-  .hero h1 em {
-    font-style: italic;
-    position: relative;
-  }
-
-  .hero h1 em::after {
-    content: '';
+  .blob {
     position: absolute;
-    bottom: 0.05em;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--white);
-    opacity: 0.3;
-  }
-
-  .hero-sub {
-    font-size: 1.15rem;
-    color: var(--gray);
-    max-width: 550px;
-    margin-top: 2rem;
-    line-height: 1.7;
-    opacity: 0;
-    animation: fadeUp 0.8s ease forwards 0.7s;
-  }
-
-  .hero-cta-group {
-    display: flex;
-    gap: 1rem;
-    margin-top: 3rem;
-    opacity: 0;
-    animation: fadeUp 0.8s ease forwards 0.9s;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    background: var(--white);
-    color: var(--black);
-    padding: 1rem 2.5rem;
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .btn-primary::after {
-    content: '→';
-    transition: transform 0.3s ease;
-  }
-
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 40px rgba(255,255,255,0.1);
-  }
-
-  .btn-primary:hover::after { transform: translateX(4px); }
-
-  .btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: transparent;
-    color: var(--white);
-    padding: 1rem 2.5rem;
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 1px solid var(--gray-border);
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-
-  .btn-secondary:hover {
-    border-color: var(--white);
-    background: rgba(255,255,255,0.03);
-  }
-
-  .hero-proof {
-    margin-top: 4rem;
-    display: flex;
-    gap: 3rem;
-    opacity: 0;
-    animation: fadeUp 0.8s ease forwards 1.1s;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero-proof-item {
-    text-align: center;
-  }
-
-  .hero-proof-item .number {
-    font-family: 'Instrument Serif', serif;
-    font-size: 2rem;
-    display: block;
-    line-height: 1;
-  }
-
-  .hero-proof-item .label {
-    font-size: 0.7rem;
-    color: var(--gray);
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-top: 0.3rem;
-    display: block;
-  }
-
-  /* ─── MARQUEE ─── */
-  .marquee-section {
-    border-top: 1px solid var(--gray-border);
-    border-bottom: 1px solid var(--gray-border);
-    padding: 1.5rem 0;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .marquee-track {
-    display: flex;
-    animation: marquee 30s linear infinite;
-    width: max-content;
-  }
-
-  .marquee-item {
-    font-family: 'Instrument Serif', serif;
-    font-size: 1.1rem;
-    color: var(--gray);
-    white-space: nowrap;
-    padding: 0 2rem;
-    font-style: italic;
-  }
-
-  .marquee-item .dot {
-    color: var(--white);
-    margin-right: 2rem;
-    font-style: normal;
-  }
-
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  /* ─── SECTIONS GENERAL ─── */
-  section { position: relative; }
-
-  .section-pad {
-    padding: 8rem 3rem;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .section-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: var(--gray);
-    margin-bottom: 1rem;
-    font-weight: 400;
-  }
-
-  .section-title {
-    font-family: 'Instrument Serif', serif;
-    font-size: clamp(2.2rem, 4.5vw, 4rem);
-    font-weight: 400;
-    line-height: 1.15;
-    max-width: 700px;
-  }
-
-  .section-title em {
-    font-style: italic;
-    opacity: 0.6;
-  }
-
-  /* ─── PROBLEM / AGITATION ─── */
-  .problem {
-    background: var(--black);
-  }
-
-  .problem-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    margin-top: 4rem;
-  }
-
-  .problem-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .problem-list li {
-    padding: 1.5rem;
-    border: 1px solid var(--gray-border);
-    position: relative;
-    transition: all 0.3s;
-  }
-
-  .problem-list li:hover {
-    border-color: rgba(255,255,255,0.2);
-    background: rgba(255,255,255,0.02);
-  }
-
-  .problem-list li .num {
-    font-family: 'Instrument Serif', serif;
-    font-size: 1.2rem;
-    color: var(--gray);
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-
-  .problem-list li p {
-    color: var(--accent);
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .problem-visual {
-    position: relative;
-    height: 100%;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .eye-graphic {
-    width: 300px;
-    height: 300px;
-    border: 1px solid var(--gray-border);
     border-radius: 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: pulseEye 4s ease-in-out infinite;
+    filter: blur(100px);
+    opacity: 0.55;
+    will-change: transform;
+  }
+  .blob.b1 {
+    width: 650px; height: 650px;
+    background: radial-gradient(circle, #a78bfa, transparent 70%);
+    top: -200px; left: -200px;
+    animation: floatBlob1 22s ease-in-out infinite;
+  }
+  .blob.b2 {
+    width: 550px; height: 550px;
+    background: radial-gradient(circle, #f472b6, transparent 70%);
+    top: 30%; right: -150px;
+    animation: floatBlob2 26s ease-in-out infinite;
+  }
+  .blob.b3 {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, #60a5fa, transparent 70%);
+    bottom: -100px; left: 20%;
+    animation: floatBlob3 30s ease-in-out infinite;
+  }
+  @keyframes floatBlob1 {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    33% { transform: translate(150px, 100px) scale(1.15); }
+    66% { transform: translate(-80px, 200px) scale(0.9); }
+  }
+  @keyframes floatBlob2 {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    50% { transform: translate(-200px, 150px) scale(1.2); }
+  }
+  @keyframes floatBlob3 {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    40% { transform: translate(250px, -100px) scale(0.85); }
+    70% { transform: translate(100px, -200px) scale(1.1); }
   }
 
-  .eye-graphic::before {
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.2);
-    animation: pulseEye 4s ease-in-out infinite reverse;
-  }
-
-  .eye-graphic::after {
-    content: 'ilyd';
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-  }
-
-  @keyframes pulseEye {
-    0%, 100% { transform: scale(1); opacity: 0.6; }
-    50% { transform: scale(1.05); opacity: 1; }
-  }
-
-  /* ─── SERVICES ─── */
-  .services { background: var(--gray-light); }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    margin-top: 4rem;
-    background: var(--gray-border);
-  }
-
-  .service-card {
-    background: var(--gray-light);
-    padding: 3rem 2rem;
-    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: var(--white);
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-  }
-
-  .service-card:hover::before { transform: scaleX(1); }
-
-  .service-card:hover {
-    background: rgba(255,255,255,0.03);
-  }
-
-  .service-icon {
-    font-family: 'Instrument Serif', serif;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    display: block;
-    line-height: 1;
-  }
-
-  .service-card h3 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 1.15rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.02em;
-  }
-
-  .service-card p {
-    color: var(--gray);
-    font-size: 0.9rem;
-    line-height: 1.7;
-  }
-
-  /* ─── RESULTS / SOCIAL PROOF ─── */
-  .results { background: var(--black); }
-
-  .results-stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .stat-card {
-    text-align: center;
-    padding: 2.5rem 1rem;
-    border: 1px solid var(--gray-border);
-    transition: all 0.3s;
-  }
-
-  .stat-card:hover {
-    border-color: rgba(255,255,255,0.3);
-    transform: translateY(-4px);
-  }
-
-  .stat-card .value {
-    font-family: 'Instrument Serif', serif;
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
-    display: block;
-    line-height: 1;
-  }
-
-  .stat-card .desc {
-    font-size: 0.75rem;
-    color: var(--gray);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-top: 0.75rem;
-    display: block;
-  }
-
-  .testimonials {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-
-  .testimonial {
-    border: 1px solid var(--gray-border);
-    padding: 2.5rem;
-    transition: all 0.3s;
-  }
-
-  .testimonial:hover {
-    border-color: rgba(255,255,255,0.2);
-  }
-
-  .testimonial-quote {
-    font-family: 'Instrument Serif', serif;
-    font-size: 1.2rem;
-    font-style: italic;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: var(--accent);
-  }
-
-  .testimonial-author {
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gray);
-  }
-
-  .testimonial-author strong {
-    color: var(--white);
-    font-weight: 500;
-    display: block;
-    margin-bottom: 0.2rem;
-  }
-
-  /* ─── PROCESS ─── */
-  .process { background: var(--gray-light); }
-
-  .process-steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    margin-top: 4rem;
-  }
-
-  .process-step {
-    padding: 3rem 2rem;
-    position: relative;
-    border-right: 1px solid var(--gray-border);
-  }
-
-  .process-step:last-child { border-right: none; }
-
-  .step-number {
-    font-family: 'Instrument Serif', serif;
-    font-size: 5rem;
-    line-height: 1;
-    color: rgba(255,255,255,0.05);
-    margin-bottom: 1.5rem;
-    display: block;
-  }
-
-  .process-step h3 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .process-step p {
-    color: var(--gray);
-    font-size: 0.9rem;
-    line-height: 1.7;
-  }
-
-  /* ─── BOOKING / CTA ─── */
-  .booking {
-    background: var(--black);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .booking::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
-  .booking .section-title {
-    max-width: 800px;
-    margin: 0 auto 1rem;
-  }
-
-  .booking-sub {
-    color: var(--gray);
-    max-width: 500px;
-    margin: 0 auto 3rem;
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .cal-embed-wrapper {
-    max-width: 700px;
-    margin: 0 auto;
-    min-height: 500px;
-    border: 1px solid var(--gray-border);
-    background: rgba(255,255,255,0.02);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  .cal-placeholder {
-    padding: 3rem;
-    text-align: center;
-    color: var(--gray);
-  }
-
-  .cal-placeholder p {
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-  }
-
-  .cal-placeholder code {
-    display: block;
-    background: rgba(255,255,255,0.05);
-    padding: 1.5rem;
-    font-size: 0.75rem;
-    color: var(--accent);
-    border: 1px solid var(--gray-border);
-    text-align: left;
-    word-break: break-all;
-    line-height: 1.6;
-    margin-top: 1rem;
-  }
-
-  /* ─── FAQ ─── */
-  .faq { background: var(--gray-light); }
-
-  .faq-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin-top: 4rem;
-    align-items: start;
-  }
-
-  .faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .faq-item {
-    border-bottom: 1px solid var(--gray-border);
-    overflow: hidden;
-  }
-
-  .faq-question {
-    width: 100%;
-    background: none;
-    border: none;
-    color: var(--white);
-    font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
-    padding: 1.5rem 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: color 0.3s;
-  }
-
-  .faq-question:hover { color: var(--accent); }
-
-  .faq-toggle {
-    font-size: 1.2rem;
-    transition: transform 0.3s;
-    color: var(--gray);
-    flex-shrink: 0;
-    margin-left: 1rem;
-  }
-
-  .faq-item.open .faq-toggle { transform: rotate(45deg); }
-
-  .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-  }
-
-  .faq-item.open .faq-answer {
-    max-height: 300px;
-    padding-bottom: 1.5rem;
-  }
-
-  .faq-answer p {
-    color: var(--gray);
-    font-size: 0.9rem;
-    line-height: 1.7;
-  }
-
-  /* ─── FINAL CTA ─── */
-  .final-cta {
-    background: var(--white);
-    color: var(--black);
-    text-align: center;
-    padding: 6rem 3rem;
-  }
-
-  .final-cta .section-title {
-    color: var(--black);
-    margin: 0 auto 1.5rem;
-  }
-
-  .final-cta p {
-    color: rgba(10,10,10,0.6);
-    max-width: 500px;
-    margin: 0 auto 2.5rem;
-    font-size: 1rem;
-  }
-
-  .btn-dark {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    background: var(--black);
-    color: var(--white);
-    padding: 1.1rem 3rem;
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-    border: none;
-    cursor: pointer;
-  }
-
-  .btn-dark::after { content: '→'; transition: transform 0.3s ease; }
-  .btn-dark:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
-  .btn-dark:hover::after { transform: translateX(4px); }
-
-  /* ─── FOOTER ─── */
-  footer {
-    background: var(--black);
-    border-top: 1px solid var(--gray-border);
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  footer .footer-left {
-    font-size: 0.75rem;
-    color: var(--gray);
-    letter-spacing: 0.1em;
-  }
-
-  footer .footer-right {
-    display: flex;
-    gap: 2rem;
-  }
-
-  footer .footer-right a {
-    color: var(--gray);
-    text-decoration: none;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: color 0.3s;
-  }
-
-  footer .footer-right a:hover { color: var(--white); }
-
-  /* ─── ANIMATIONS ─── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  }
-
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* ─── MOBILE ─── */
-  @media (max-width: 960px) {
-    nav { padding: 1rem 1.5rem; }
-
-    .nav-links {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--black);
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      z-index: 999;
-    }
-
-    .nav-links.open { display: flex; }
-
-    .nav-links a { font-size: 1.2rem; }
-
-    .nav-mobile-toggle { display: block; z-index: 1000; }
-    .nav-mobile-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 5px); }
-    .nav-mobile-toggle.open span:nth-child(2) { opacity: 0; }
-    .nav-mobile-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -5px); }
-
-    .hero { padding: 7rem 1.5rem 3rem; }
-    .section-pad { padding: 5rem 1.5rem; }
-
-    .problem-grid,
-    .faq-grid { grid-template-columns: 1fr; gap: 2rem; }
-
-    .services-grid,
-    .process-steps { grid-template-columns: 1fr; background: none; }
-
-    .service-card { border: 1px solid var(--gray-border); margin-bottom: -1px; }
-
-    .process-step { border-right: none; border-bottom: 1px solid var(--gray-border); }
-    .process-step:last-child { border-bottom: none; }
-
-    .results-stats { grid-template-columns: repeat(2, 1fr); }
-    .testimonials { grid-template-columns: 1fr; }
-
-    .hero-proof { gap: 2rem; }
-
-    footer { flex-direction: column; text-align: center; }
-    footer .footer-right { justify-content: center; }
-  }
-
-  @media (max-width: 480px) {
-    .results-stats { grid-template-columns: 1fr; }
-    .hero-cta-group { flex-direction: column; align-items: center; }
-    .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
-  }
-</style>
-</head>
-<body>
-
-<!-- Cursor Glow -->
-<div class="cursor-glow" id="cursorGlow"></div>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">ILYD <span>MARKETING</span></a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#leistungen">Leistungen</a></li>
-    <li><a href="#ergebnisse">Ergebnisse</a></li>
-    <li><a href="#prozess">Prozess</a></li>
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="#buchen" class="nav-cta">Call buchen</a></li>
-  </ul>
-  <button class="nav-mobile-toggle" id="navToggle" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="hero">
-  <p class="hero-eyebrow">Performance Marketing Agentur</p>
-  <h1>Marketing that<br>opens up your <em>eyelids.</em></h1>
-  <p class="hero-sub">Wir machen Marken sichtbar, messbar und unübersehbar. Strategien, die nicht nur gesehen werden — sondern wirken.</p>
-  <div class="hero-cta-group">
-    <a href="#buchen" class="btn-primary">Kostenloses Strategiegespräch</a>
-    <a href="#leistungen" class="btn-secondary">Mehr erfahren</a>
-  </div>
-  <div class="hero-proof">
-    <div class="hero-proof-item">
-      <span class="number">100%</span>
-      <span class="label">Transparenz</span>
-    </div>
-    <div class="hero-proof-item">
-      <span class="number">1:1</span>
-      <span class="label">Persönliche Betreuung</span>
-    </div>
-    <div class="hero-proof-item">
-      <span class="number">30 Min</span>
-      <span class="label">Gratis Strategie-Call</span>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee-section">
-  <div class="marquee-track">
-    <span class="marquee-item"><span class="dot">•</span>Meta Ads</span>
-    <span class="marquee-item"><span class="dot">•</span>Google Ads</span>
-    <span class="marquee-item"><span class="dot">•</span>TikTok Ads</span>
-    <span class="marquee-item"><span class="dot">•</span>Conversion Optimierung</span>
-    <span class="marquee-item"><span class="dot">•</span>Landing Pages</span>
-    <span class="marquee-item"><span class="dot">•</span>Funnel Strategie</span>
-    <span class="marquee-item"><span class="dot">•</span>Branding</span>
-    <span class="marquee-item"><span class="dot">•</span>Content Produktion</span>
-    <span class="marquee-item"><span class="dot">•</span>Meta Ads</span>
-    <span class="marquee-item"><span class="dot">•</span>Google Ads</span>
-    <span class="marquee-item"><span class="dot">•</span>TikTok Ads</span>
-    <span class="marquee-item"><span class="dot">•</span>Conversion Optimierung</span>
-    <span class="marquee-item"><span class="dot">•</span>Landing Pages</span>
-    <span class="marquee-item"><span class="dot">•</span>Funnel Strategie</span>
-    <span class="marquee-item"><span class="dot">•</span>Branding</span>
-    <span class="marquee-item"><span class="dot">•</span>Content Produktion</span>
-  </div>
-</div>
-
-<!-- PROBLEM / AGITATION -->
-<section class="problem section-pad" id="problem">
-  <div class="container">
-    <div class="problem-grid">
-      <div class="reveal">
-        <p class="section-label">Das Problem</p>
-        <h2 class="section-title">Dein Marketing <em>schläft</em> noch?</h2>
-        <ul class="problem-list" style="margin-top: 2.5rem;">
-          <li>
-            <span class="num">01</span>
-            <p>Du schaltest Ads, aber die Ergebnisse bleiben unter deinen Erwartungen.</p>
-          </li>
-          <li>
-            <span class="num">02</span>
-            <p>Deine Marke ist unsichtbar im Meer von Konkurrenten.</p>
-          </li>
-          <li>
-            <span class="num">03</span>
-            <p>Du weisst, dass mehr möglich ist — aber nicht, wo du anfangen sollst.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="problem-visual reveal">
-        <div class="eye-graphic"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services section-pad" id="leistungen">
-  <div class="container">
-    <div class="reveal">
-      <p class="section-label">Leistungen</p>
-      <h2 class="section-title">Alles, was deine Marke<br><em>unübersehbar</em> macht.</h2>
-    </div>
-    <div class="services-grid reveal">
-      <div class="service-card">
-        <span class="service-icon">01</span>
-        <h3>Performance Ads</h3>
-        <p>Meta, Google & TikTok Ads — datengetrieben, skalierbar, profitabel. Wir finden deine Zielgruppe und liefern messbare Ergebnisse.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-icon">02</span>
-        <h3>Funnel & Landing Pages</h3>
-        <p>Conversion-optimierte Funnels und Landing Pages, die Besucher in Kunden verwandeln. Jeder Klick zählt.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-icon">03</span>
-        <h3>Branding & Content</h3>
-        <p>Markenidentität, die auffällt. Creatives, UGC und Content-Strategien, die in den Feeds herausstechen.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-icon">04</span>
-        <h3>Strategieberatung</h3>
-        <p>1:1 Beratung für deine Marketingstrategie. Wir analysieren, optimieren und skalieren deinen Ansatz.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-icon">05</span>
-        <h3>E-Commerce Growth</h3>
-        <p>Vom Shop-Setup bis zur Skalierung. Wir kennen die Hebel, die dein E-Commerce Geschäft nach vorne bringen.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-icon">06</span>
-        <h3>Analytics & Tracking</h3>
-        <p>Sauberes Tracking, klare Dashboards, echte Insights. Du siehst genau, was funktioniert und was nicht.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHAT YOU GET -->
-<section class="results section-pad" id="ergebnisse">
-  <div class="container">
-    <div class="reveal">
-      <p class="section-label">Dein Vorteil</p>
-      <h2 class="section-title">Was dich bei uns<br><em>erwartet.</em></h2>
-    </div>
-    <div class="results-stats reveal">
-      <div class="stat-card">
-        <span class="value">100%</span>
-        <span class="desc">Transparente Reports</span>
-      </div>
-      <div class="stat-card">
-        <span class="value">1:1</span>
-        <span class="desc">Direkter Ansprechpartner</span>
-      </div>
-      <div class="stat-card">
-        <span class="value">24h</span>
-        <span class="desc">Max. Antwortzeit</span>
-      </div>
-      <div class="stat-card">
-        <span class="value">0</span>
-        <span class="desc">Versteckte Kosten</span>
-      </div>
-    </div>
-    <div class="testimonials reveal">
-      <div class="testimonial">
-        <p class="testimonial-quote" style="font-style: normal; font-family: 'Outfit', sans-serif; font-weight: 300; font-size: 1rem;">
-          <strong style="display:block; margin-bottom:0.75rem; font-size:1.1rem; font-family: 'Instrument Serif', serif; font-weight:400;">Kein Bullshit, nur Resultate.</strong>
-          Wir versprechen dir nichts, was wir nicht halten können. Statt aufgeblasener Zahlen bekommst du eine ehrliche Analyse, einen klaren Plan und messbare Ergebnisse — Schritt für Schritt.
-        </p>
-      </div>
-      <div class="testimonial">
-        <p class="testimonial-quote" style="font-style: normal; font-family: 'Outfit', sans-serif; font-weight: 300; font-size: 1rem;">
-          <strong style="display:block; margin-bottom:0.75rem; font-size:1.1rem; font-family: 'Instrument Serif', serif; font-weight:400;">Dein Erfolg ist unser Beweis.</strong>
-          Wir bauen unsere Reputation auf deinen Ergebnissen auf — nicht auf leeren Testimonials. Überzeug dich selbst im kostenlosen Strategiegespräch.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section class="process section-pad" id="prozess">
-  <div class="container">
-    <div class="reveal">
-      <p class="section-label">Unser Prozess</p>
-      <h2 class="section-title">In 3 Schritten zum <em>Wachstum.</em></h2>
-    </div>
-    <div class="process-steps reveal">
-      <div class="process-step">
-        <span class="step-number">01</span>
-        <h3>Strategie-Call</h3>
-        <p>Wir lernen dein Business kennen, analysieren deine aktuelle Situation und entwickeln einen klaren Fahrplan.</p>
-      </div>
-      <div class="process-step">
-        <span class="step-number">02</span>
-        <h3>Umsetzung</h3>
-        <p>Unser Team setzt die Strategie um — von Creatives über Kampagnen bis zu optimierten Landing Pages.</p>
-      </div>
-      <div class="process-step">
-        <span class="step-number">03</span>
-        <h3>Skalierung</h3>
-        <p>Wir optimieren datenbasiert, skalieren was funktioniert und liefern dir transparente Reports.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOKING -->
-<section class="booking section-pad" id="buchen">
-  <div class="container">
-    <div class="reveal">
-      <p class="section-label">Jetzt starten</p>
-      <h2 class="section-title">Bereit, die Augen<br><em>zu öffnen?</em></h2>
-      <p class="booking-sub">Buche dein kostenloses Strategiegespräch. 30 Minuten, die dein Marketing verändern werden.</p>
-    </div>
-
-    <!-- GHL Booking Embed -->
-    <div class="cal-embed-wrapper reveal" style="min-height:600px;">
-      <iframe src="https://api.leadconnectorhq.com/widget/booking/tbyfwOwCzUZ3a0N3vMxN" style="width: 100%; min-height: 600px; border: none; overflow: hidden;" scrolling="no" id="tbyfwOwCzUZ3a0N3vMxN_1774208904309"></iframe>
-      <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq section-pad" id="faq">
-  <div class="container">
-    <div class="faq-grid">
-      <div class="reveal">
-        <p class="section-label">FAQ</p>
-        <h2 class="section-title">Häufig gestellte <em>Fragen.</em></h2>
-        <p style="color: var(--gray); margin-top: 1rem; font-size: 0.95rem;">Noch Fragen? Schreib uns direkt oder buche einen Call.</p>
-      </div>
-      <div class="faq-list reveal">
-        <div class="faq-item">
-          <button class="faq-question">
-            Was kostet die Zusammenarbeit?
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"><p>Unsere Pakete starten ab CHF 1'500/Monat. Im kostenlosen Erstgespräch analysieren wir deine Situation und erstellen ein individuelles Angebot.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            Wie schnell sehe ich Ergebnisse?
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"><p>Erste Ergebnisse siehst du in der Regel innerhalb der ersten 2–4 Wochen. Nachhaltige Skalierung beginnt nach 2–3 Monaten optimierter Zusammenarbeit.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            Arbeitet ihr mit jeder Branche?
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"><p>Wir sind spezialisiert auf E-Commerce, SaaS und Dienstleister. Im Erstgespräch prüfen wir, ob wir der richtige Partner für dein Business sind.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            Gibt es eine Mindestlaufzeit?
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"><p>Wir empfehlen eine Zusammenarbeit von mindestens 3 Monaten, um nachhaltige Ergebnisse zu erzielen. Es gibt keine versteckten Kündigungsfristen.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            Was passiert im Erstgespräch?
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"><p>Wir analysieren deine aktuelle Marketingsituation, identifizieren Wachstumspotenziale und entwickeln einen konkreten Fahrplan — komplett kostenlos und unverbindlich.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final-cta">
-  <h2 class="section-title">Schlaf nicht weiter.<br><em>Öffne die Augen.</em></h2>
-  <p>30 Minuten, die dein Marketing auf das nächste Level bringen. Kostenlos.</p>
-  <a href="#buchen" class="btn-dark">Jetzt Call buchen</a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-left">
-    &copy; 2026 ilyd marketing &middot; ilyd.io
-  </div>
-  <div class="footer-right">
-    <a href="#">Impressum</a>
-    <a href="#">Datenschutz</a>
-    <a href="mailto:hello@ilyd.io">hello@ilyd.io</a>
-  </div>
-</footer>
-
-<script>
-  // ─── MOBILE NAV ───
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    navToggle.classList.toggle('open');
-  });
-
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navToggle.classList.remove('open');
-    });
-  });
-
-  // ─── CURSOR GLOW ───
-  const glow = document.getElementById('cursorGlow');
-  document.addEventListener('mousemove', e => {
-    glow.style.left = e.clientX + 'px';
-    glow.style.top = e.clientY + 'px';
-  });
-
-  // ─── SCROLL REVEAL ───
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.15 });
-
-  reveals.forEach(el => observer.observe(el));
-
-  // ─── FAQ ACCORDION ───
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.parentElement;
-      const isOpen = item.classList.contains('open');
-
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-
-      if (!isOpen) item.classList.add('open');
-    });
-  });
-
-  // ─── COUNTER ANIMATION ───
-  const counters = document.querySelectorAll('[data-count]');
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.dataset.count);
-        let current = 0;
-        const step = Math.ceil(target / 40);
-        const interval = setInterval(() => {
-          current += step;
-          if (current >= target) {
-            el.textContent = target;
-            clearInterval(interval);
-          } else {
-            el.textContent = current;
-          }
-        }, 30);
-        counterObserver.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  counters.forEach(el => counterObserver.observe(el));
-
-  // ─── SMOOTH SCROLL ───
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-</script>
-
-</body>
-</html>
+  .grain {
+... (842 lines left)
